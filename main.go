@@ -18,6 +18,7 @@ type Metrics struct {
 	DiskUsage   float64
 	NetworkSent uint64
 	NetworkRecv	uint64
+	LastUpdated string
 }
 
 func getMetrics() Metrics {
@@ -38,6 +39,7 @@ func getMetrics() Metrics {
 		DiskUsage:   diskUsage.UsedPercent,
 		NetworkSent: netStats[0].BytesSent,
 		NetworkRecv: netStats[0].BytesRecv,
+		LastUpdated: time.Now().Format(time.RFC1123),
 
 	}
 }
