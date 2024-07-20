@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hardware Resource Monitor</h1>
+
+    <div hx-get = "/metrics" hx-trigger="load, every 5s" hx-swap="innerHTML">
+        <p>CPU Usage: {{ .CPUUsage }}%</p>
+        <p>Memory Usage: {{ .MemoryUsage }}%</p>
+        <p>Disk Usage: {{ .DiskUsage }}%</p>
+        <p>Network Sent: {{ .NetworkSent }} bytes</p>
+        <p>Network Recv: {{ .NetworkRecv }} bytes</p>
+
+    </div>
+</body>
+</html>
