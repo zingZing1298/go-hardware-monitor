@@ -1,4 +1,4 @@
-package pkgs
+package hardware
 
 import (
 	"fmt"
@@ -42,7 +42,6 @@ func GetSystemDetails() (string, error) {
 	if err != nil {
 		return "", err
 	}
-
 	output := fmt.Sprintf("HostName: %s\nTotal Memory: %d\nUsed Memory: %d\nOS: %s", hostStat.Hostname, vimStat.Total, vimStat.Used, runTimeOS)
 	return output, nil
 }

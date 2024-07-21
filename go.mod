@@ -1,4 +1,4 @@
-module hwmonitor
+module github.com/zingZing1298/go-hardware-monitor
 
 go 1.22.5
 
