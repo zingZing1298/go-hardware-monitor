@@ -2,7 +2,10 @@ module github.com/zingZing1298/go-hardware-monitor
 
 go 1.22.5
 
-require github.com/shirou/gopsutil/v3 v3.24.5
+require (
+	github.com/shirou/gopsutil/v3 v3.24.5
+	nhooyr.io/websocket v1.8.11
+)
 
 require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
@@ -13,5 +16,4 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	golang.org/x/sys v0.20.0 // indirect
-	nhooyr.io/websocket v1.8.11 // indirect
 )
